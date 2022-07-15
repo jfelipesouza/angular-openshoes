@@ -20,9 +20,9 @@
   --description:1.3rem;
 
   /*Font-size Mobile*/
-  --mobile-title:2.5rem;
-  --mobile-subTitle:1.8rem;
-  --mobile-description:1.3rem;
+  --mobile-title:2rem;
+  --mobile-subTitle:1.5rem;
+  --mobile-description:1rem;
 
   /*Space*/
   --space-xxxlg:3rem;
