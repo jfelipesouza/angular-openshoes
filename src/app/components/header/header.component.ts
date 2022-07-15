@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   constructor() {}
 
+  @Input() position?: string;
+  @Input() navButton?: {}[];
+
   ngOnInit(): void {
-    console.log('');
+    if (this.position) {
+      document.getElementById('header')!.style.position = this.position;
+    }
   }
 }

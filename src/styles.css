@@ -6,7 +6,7 @@
 :root{
   /*Pallete*/
   --primary:#1D3557;
-  --primaty-light:#A8DADC;
+  --primary-light:#A8DADC;
   --secundary:#457B9D;
   --card:#F1FAEE;
   --error:#E63946;
@@ -47,9 +47,6 @@
   list-style: none;
 }
 
-*::after,*::before{
-  content: '';
-}
 
 
 

@@ -1,0 +1,97 @@
+.header {
+  background-color: var(--primary);
+  width: 100vw;
+}
+
+.header nav {
+  padding: 0.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo-container {
+  display: flex;
+  color: var(--text-light);
+  position: relative;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 3rem;
+  width: auto;
+  object-fit: cover;
+}
+
+.menu-container-icon {
+  display: none;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.list-item-container {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.singIn {
+  background-color: var(--primary-light);
+  border-radius: var(--space-sm);
+  transition: all 0.3s ease-in-out;
+}
+
+.singIn:hover{
+  transform: scale(1.1);
+}
+
+.singIn a {
+  color: var(--text);
+}
+
+.list-item {
+  text-decoration: none;
+  color: var(--text-light);
+  background-color: transparent;
+  position: relative;
+  font-size: 1rem;
+}
+
+.list-item::after,
+.list-item::before {
+  content: "";
+}
+
+.list-item::after {
+  background-color: var(--primary-light);
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -0.5rem;
+  transition: all 0.3s linear;
+}
+
+.list-item:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 628px) {
+  .menu-container-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-container-icon i {
+    font-size: 1.8rem;
+  }
+}
+
+
