@@ -1,37 +1,49 @@
 <header class="header" id="header">
   <nav>
-    <div class="menu-container-icon" onclick="handleOpenMenu()">
+    <div *ngIf="showMobileMenu" class="menu-container-icon" (click) = "handleOpenMenu()">
       <i class="ph-list color-text-light"></i>
     </div>
-    <div>
+    <!--Menu Responsivo--->
+    <div class="menu-container" id="menu" (click) = "handleOpenMenu()">
+      <ul *ngIf ='navButtons'  class="menu-content" >
+        <li *ngFor = "let button of navButtons" class="menu-item">
+          <a
+            *ngIf="button.normal; else especial"
+            href={{button.link}}>
+              {{button.name}}
+          </a>
+          <ng-template #especial>
+            <a class="singIn" routerLink ={{button.link}}>SingIn</a>
+          </ng-template>
+        </li>
+      </ul>
+      <div class="menu-closed-icon">
+        <i class="ph-x"></i>
+      </div>
+    </div>
 
+    <div>
       <a routerLink="/" class="logo-container">
         <img src="../../../assets/img/logo.svg" alt="OPENSHOES" class="logo" />
       </a>
     </div>
 
     <div>
-      <ul class="list" id="list-container-right">
-        <li class="list-item-container">
-          <a class="list-item" href="#hero">Home</a>
-        </li>
-        <li class="list-item-container">
-          <a class="list-item" href="#about">Sobre</a>
-        </li>
-        <li class="list-item-container">
-          <a class="list-item" href="#hot">Produtos Quentes</a>
-        </li>
-        <li class="list-item-container">
-          <a class="list-item" href="#contact">Contatos</a>
-        </li>
-        <li class="list-item-container singIn">
-          <a class="color-text-light" routerLink = "search">SingIn</a>
-        </li>
-
-        <li class="list-item-container">
-          <a class="list-item" href="#contact">{{position}}</a>
-        </li>
-      </ul>
+        <ul *ngIf ='navButtons'  class="list" >
+          <li *ngFor = "let button of navButtons" class="list-item-container">
+            <a
+              *ngIf="button.normal; else especial"
+              class="list-item"
+              href={{button.link}}>
+                {{button.name}}
+            </a>
+            <ng-template #especial>
+              <a class="singIn" routerLink = "search">SingIn</a>
+            </ng-template>
+          </li>
+        </ul>
     </div>
+
+
   </nav>
 </header>

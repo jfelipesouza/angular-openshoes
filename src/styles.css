@@ -45,6 +45,45 @@
   font-family: 'Inter', sans-serif;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
+  outline: 0;
+  line-height: normal;
+}
+
+button,a{
+  cursor: pointer;
+}
+
+img,
+span,
+nav a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f6f0f0;
+}
+
+/* width scrollbar */
+body::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+/* Track scrollbar */
+body::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+/* Handle scrollbar */
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 2rem;
 }
 
 
