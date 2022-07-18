@@ -1,6 +1,7 @@
 .header {
   background-color: var(--primary);
   width: 100vw;
+  z-index: 999;
 }
 
 .header nav {

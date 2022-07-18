@@ -15,6 +15,11 @@ export class HomeComponent implements OnInit {
     { name: 'Contato', link: '#contact', normal: true },
     { name: 'SingIn', link: 'singIn', normal: false },
   ];
+
+  actionButtonLink = 'search';
+  actionButtonBgColorNormal = 'secundary';
+  actionButtonBgColorLight = 'primary-light';
+
   constructor() {}
 
   ngOnInit(): void {

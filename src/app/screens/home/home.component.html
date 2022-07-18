@@ -1,3 +1,177 @@
-<app-header [position]="navPosition" [navButtons] = "navButtons" [showMobileMenu]="showMobileMenu"  ></app-header>
+<app-header
+  [position]="navPosition"
+  [navButtons]="navButtons"
+  [showMobileMenu]="showMobileMenu"
+>
+</app-header>
 
-<main></main>
+<main>
+  <section class="section" id="hero">
+    <div class="left-container" id="hero">
+      <h2 class="title">
+        Bem-vindo ao <span id="red">OPEN</span><span>SHOES</span>
+      </h2>
+      <p class="description">
+        Somos a maior vitrine digital da América Latina voltada a calçados!
+        Somos líderes em atendimento, qualidade e vendas de toda a América
+        latina. Nossos calçados possuem máxima qualidade e conforto desde o uso
+        diário até os mais robustos dos calçados.
+      </p>
+
+      <app-action-anchor
+        [link]="actionButtonLink"
+        [bgColor]="actionButtonBgColorNormal"
+        value="BUSQUE JÁ"
+        id="action-anchor-1"
+      >
+      </app-action-anchor>
+    </div>
+    <div class="right-container" id="shoes">
+      <img
+        src="../../../assets/img/orange-shoes.svg"
+        alt="sapato laranja bonito"
+        class="image image-shadow"
+        id="shoes"
+      />
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="left-container">
+      <img
+        src="../../../assets/img/allstar-shoes.svg"
+        alt="imagem da empresa"
+        class="image border-md shadow"
+      />
+    </div>
+    <div class="right-container">
+      <h2 class="title light">Somos pioneiros no mercado</h2>
+      <p class="description light">
+        Somos pioneiras no serviço especializado a entrega de calçados de forma
+        prática e transparente. Através do nosso portal mantenha contato com
+        nossa equipe de suporte 24h, assine nossa gratuitamente nosso serviço de
+        anúncios e receba no seu smartphone ou e-mail ofertas imperdíveis
+      </p>
+
+      <app-action-anchor
+        [link]="actionButtonLink"
+        value="Comece agora"
+        [bgColor]="actionButtonBgColorLight"
+        id="action-anchor-2"
+      >
+      </app-action-anchor>
+    </div>
+  </section>
+
+  <section class="section" id="hot">
+    <h2 class="title color-primary">Mais vendidos</h2>
+
+    <div class="wrapper">
+      <a href="./search.html#red_nike_revolt">
+        <div class="card shadow">
+          <img
+            src="../../../assets/img/red-nike-revolt.svg"
+            alt="red-nike-revolt"
+            class="product-image"
+          />
+          <div class="card-content">
+            <h3 class="card-title">red nike revolt</h3>
+            <p class="card-price">R$ 149,99</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="./search.html#puma_white_street">
+        <div class="card shadow">
+          <img
+            src="../../../assets/img/puma-white-street.svg"
+            alt="puma-white-street"
+            class="product-image"
+          />
+          <div class="card-content">
+            <h3 class="card-title">puma white street</h3>
+            <p class="card-price">R$ 149,99</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="./search.html#mojtaba_fahiminia">
+        <div class="card shadow">
+          <img
+            src="../../../assets/img/mojtaba-fahiminia.svg"
+            alt="mojtaba-fahiminia"
+            class="product-image"
+          />
+          <div class="card-content">
+            <h3 class="card-title">mojtaba fahiminia</h3>
+            <p class="card-price">R$ 149,99</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <br />
+    <app-action-anchor
+      [link]="actionButtonLink"
+      value="Veja mais"
+      [bgColor]="actionButtonBgColorNormal"
+      id="action-anchor-3"
+    >
+    </app-action-anchor>
+  </section>
+
+  <section class="section" id="contact" style="padding-top: 3rem">
+    <div class="left-container">
+      <h2 class="title light">Ficou com alguma dúvida?</h2>
+      <h3 class="subTitle">Entre em contato conosco</h3>
+
+      <form class="form">
+        <div class="textfield">
+          <label for="name" class="form-label">Nome</label>
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            placeholder="Ex: Felipe Souza"
+          />
+        </div>
+
+        <div class="textfield">
+          <label for="email" class="form-label">E-mail</label>
+          <input
+            type="email"
+            name="e-mail"
+            class="form-input"
+            placeholder="Ex: felipe@openshoes.com"
+          />
+        </div>
+
+        <div class="textfield">
+          <label for="comment" class="form-label">Comentário</label>
+          <textarea
+            name="comment"
+            class="form-textarea"
+            placeholder="Adoraria uma pantufa de dinossaruro..."
+          ></textarea>
+        </div>
+
+        <app-action-anchor
+          link=""
+          value="Enviar"
+          bgColor="primary"
+          id="action-anchor-4"
+        >
+        </app-action-anchor>
+      </form>
+    </div>
+
+    <div class="right-container flex-center" id="contact">
+      <img
+        class="image border-md"
+        src="../../../assets/img/contact-image.svg"
+        alt="contact image"
+      />
+    </div>
+  </section>
+</main>
+
+<app-footer> </app-footer>

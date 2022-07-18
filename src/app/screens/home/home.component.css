@@ -1,4 +1,396 @@
+@keyframes float-v {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 main{
-  height: 140vh;
-  background-color: teal;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 5rem;
+  flex-direction: column;
+}
+
+
+.section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+
+  padding: 2rem 0;
+}
+.section#about,.section#contact{
+  background-color: var(--secundary);
+}
+
+.section#hot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50vw;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.title span{
+  color: var(--secundary);
+}
+
+.title span#red{
+  color: var(--error);
+}
+
+.light{
+  color: var(--text-light)!important;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.description {
+  font-size: 1rem;
+  text-align: justify;
+  margin: 1rem 0;
+  color: var(--text);
+}
+
+.right-container#shoes::before {
+  content: "";
+  position: absolute;
+
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 0, 4% 56%, 100% 100%);
+  background-color: var(--secundary);
+  z-index: -99;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.image-shadow {
+  filter: drop-shadow(3px 3px 10px #1b1a1a);
+}
+
+.image#shoes {
+  animation-name: float-v;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.card {
+  background-color: transparent;
+  min-width: 290px;
+  height: 350px;
+  border-radius: 1rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.2s linear;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  transition: all 0.2s linear;
+}
+
+.card-content:hover {
+  background-color: #00000088;
+}
+
+.card-content:hover .card,
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--text-light);
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.card-title::after,
+.card-title::before {
+  content: "";
+}
+
+.card-title::after {
+  background-color: var(--primary-light);
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -0.25rem;
+  transition: all 0.3s linear;
+}
+
+.card:hover .card-title::after,
+.card-title:hover::after {
+  width: 100%;
+}
+
+.card-price {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--secundary);
+  width: max-content;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  color: var(--text-light);
+}
+
+/* Contact Forms */
+.form {
+  width: 90%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.form-label,
+.form-input,
+.form-textarea {
+  font-size: 1rem;
+}
+
+.form-label {
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.form-input {
+  width: 100%;
+  min-height: 2rem;
+  font-weight: 500;
+}
+
+.form-textarea {
+  align-self: flex-start;
+  width: 100%;
+  min-height: 4rem;
+  height: 8rem;
+  max-height: 8rem;
+  max-width: 100%;
+}
+
+.form-input,
+.form-textarea {
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  background-color: var(--card);
+  color: var(--text);
+  transition: all 0.2s linear;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form-input:focus,
+.form-textarea:focus {
+  color: var(--text-light);
+  background-color: transparent;
+  border-color: var(--primary-light);
+}
+
+.form-input:focus::placeholder,
+.form-textarea:focus::placeholder {
+  color: var(--text-light);
+}
+
+.textfield {
+  margin-bottom: 1rem;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.form-btn:active {
+  transform: translateY(-2px);
+}
+
+.right-container#contact {
+  min-height: 100vh;
+}
+
+.right-container#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-light);
+  z-index: 1;
+  border-radius: 1000rem 0rem 0rem 0rem;
+  bottom: 2rem;
+  transform: translateY(4rem);
+}
+
+.right-container#contact img {
+  z-index: 2;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 1013px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .left-container p,
+  .right-container p {
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .right-container#shoes {
+    display: none;
+  }
+
+  .left-container#hero {
+    width: 100vw;
+  }
+
+  .image {
+    min-width: 300px;
+    width: 80%;
+  }
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact .right-container {
+    display: none;
+  }
+  .form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  ul#list-container-right {
+    display: none;
+  }
+
+  .left-container p,
+  .right-container p {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+  }
+
+  .title,
+  .subTitle,
+  .descrition {
+    width: 95%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 200px;
+  }
+  .form {
+    width: 90%;
+  }
 }
