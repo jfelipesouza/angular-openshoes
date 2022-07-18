@@ -1,0 +1,34 @@
+<header class="header">
+    <nav [ngClass]="{'register-nav': currentRoute === '/register'}">
+      <div class="menu-container-icon" (click)="handleOpenMenu()">
+        <i class="ph-list color-text-light"></i>
+      </div>
+      <div>
+        <a href="./index.html" class="logo-container">
+          <img src="./assets/img/logo.svg" alt="OPENSHOES" class="logo" />
+        </a>
+      </div>
+
+      <div *ngIf="currentRoute !== '/register'">
+        <ul class="list" id="list-container-right">
+          <li class="list-item-container">
+            <a class="list-item" href="./index.html#hero">Home</a>
+          </li>
+          <li class="list-item-container">
+            <a class="list-item" href="./index.html#about">Sobre</a>
+          </li>
+          <li class="list-item-container">
+            <a class="list-item" href="./index.html#hot">Produtos Quentes</a>
+          </li>
+          <li class="list-item-container">
+            <a class="list-item" href="./index.html#contact">Contatos</a>
+          </li>
+          <li
+            class="list-item-container bg-secundary border-md shadow bg-hover-primary-light"
+          >
+            <a class="color-text-light" href="./singIn.html">SingIn</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
