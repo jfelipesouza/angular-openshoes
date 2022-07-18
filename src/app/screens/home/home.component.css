@@ -102,6 +102,7 @@ main{
   object-fit: contain;
   width: 100%;
   height: auto;
+  border-radius: var(--space-md);
 }
 
 .image-shadow {
