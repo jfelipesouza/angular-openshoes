@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './screens/home/home.component';
 import { SearchScreenComponent } from './screens/search-screen/search-screen.component';
 import { ProductFocusComponent } from './screens/product-focus/product-focus.component';
+import { DashboardHomeComponent } from './screens/user/dashboard-home/dashboard-home.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchScreenComponent,
+  },
+  {
+    path: 'user/dashboard',
+    component: DashboardHomeComponent,
   },
   {
     path: 'product',
