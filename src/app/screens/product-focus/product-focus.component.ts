@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductFocusService } from './product-focus.service'
 
 @Component({
   selector: 'app-product-focus',
@@ -16,9 +17,17 @@ export class ProductFocusComponent implements OnInit {
     { name: 'SingIn', link: 'singIn', normal: false },
   ];
 
-  constructor() { }
+  size: string[] = [];
+  modelos: string [] = [];
+  productsFocusService: ProductFocusService;
+
+  constructor() { 
+    this.productsFocusService = new ProductFocusService();
+   }
 
   ngOnInit(): void {
+    this.size = this.productsFocusService.getSize();
+    this.modelos = this.productsFocusService.getModelos();
   }
 
 }
