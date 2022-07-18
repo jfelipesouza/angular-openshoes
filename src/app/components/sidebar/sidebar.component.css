@@ -1,0 +1,121 @@
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+}
+
+.sidebar-header {
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+}
+
+.sidebar-header h1 {
+  font-size: var(--subTitle);
+}
+.sidebar-container h1 span {
+  color: var(--primary-light);
+}
+#red {
+  color: var(--error);
+}
+
+.sidebar-user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-sm);
+  position: relative;
+}
+
+.sidebar-user-info-container::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  width: 80%;
+  height: 2px;
+  background-color: var(--secundary);
+  border-radius: 2rem;
+}
+
+.user-image-container {
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-image {
+  border-radius: 10rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.user-name {
+  color: var(--primary-light);
+  font-size: var(--description);
+  margin: var(--space-sm) 0;
+  font-weight: 700;
+}
+
+.user-description {
+  font-size: var(--generic-text);
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+.sidebar-navigation-buttons {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.sidebar-navigation-buttons ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar-navigation-buttons ul li a {
+  display: flex;
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-navigation-buttons ul li a:hover {
+  background-color: var(--secundary);
+}
+
+.sidebar-navigation-buttons ul li a i {
+  margin-right: var(--space-sm);
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--generic-text);
+  color: var(--text-light);
+}
+
+footer i {
+  margin-right: var(--space-sm);
+}
+
+footer:hover {
+  background-color: var(--error);
+  cursor: pointer;
+}
