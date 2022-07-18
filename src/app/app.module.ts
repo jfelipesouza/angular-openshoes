@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './screens/home/home.component';
 import { SearchScreenComponent } from './screens/search-screen/search-screen.component';
 import { ActionAnchorComponent } from './components/actionButtons/action-anchor/action-anchor.component';
+import { ProductFocusComponent } from './screens/product-focus/product-focus.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ActionAnchorComponent } from './components/actionButtons/action-anchor/
     HomeComponent,
     SearchScreenComponent,
     ActionAnchorComponent,
+    ProductFocusComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

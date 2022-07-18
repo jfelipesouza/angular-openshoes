@@ -1,0 +1,104 @@
+<app-header
+  [position]="navPosition"
+  [navButtons]="navButtons"
+  [showMobileMenu]="showMobileMenu"
+>
+</app-header>
+
+<main class="main">
+  <div class="left-container">
+    <h2 class="title">Nike Orange Style</h2>
+    <div class="slide">
+      <div class="image-container shadow slides">
+        <img
+          src="../../../assets/img/orange-shoes.svg"
+          alt="sapato laranja confortavél"
+          class="image"
+        />
+      </div>
+      <!-- <div class="image-container shadow slides">
+        <img
+          src="../../../assets/img/orange-shoes.svg"
+          alt="sapato laranja confortavél"
+          class="image"
+        />
+      </div>
+      <div class="image-container shadow slides">
+        <img
+          src="../../../assets/img/orange-shoes.svg"
+          alt="sapato laranja confortavél"
+          class="image"
+        />
+      </div> -->
+
+      <div class="slides-buttons-container">
+        <button class="slides-buttons shadow" onclick="currentSlide(1)">
+          <img
+            src="../../../assets/img/orange-shoes.svg"
+            alt="sapato laranja bonito"
+            class="slides-buttons-image"
+          />
+        </button>
+        <button class="slides-buttons shadow" onclick="currentSlide(2)">
+          <img
+            src="../../../assets/img/orange-shoes.svg"
+            alt="sapato laranja bonito"
+            class="slides-buttons-image"
+          />
+        </button>
+        <button class="slides-buttons shadow" onclick="currentSlide(3)">
+          <img
+            src="../../../assets/img/orange-shoes.svg"
+            alt="sapato laranja bonito"
+            class="slides-buttons-image"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="right-container">
+    <div class="specification-container">
+      <h3 class="categorie">Modelo:</h3>
+      <p class="text">All Street;</p>
+    </div>
+
+    <div class="specification-container" id="list-size">
+      <h3 class="categorie">Tamanhos:</h3>
+      <ul class="size-list">
+        <button class="size-item">34</button>
+        <button class="size-item">35</button>
+        <button class="size-item">36</button>
+        <button class="size-item">37</button>
+        <button class="size-item">38</button>
+        <button class="size-item">39</button>
+        <button class="size-item" disabled>40</button>
+        <button class="size-item">41</button>
+        <button class="size-item">42</button>
+        <button class="size-item">43</button>
+      </ul>
+    </div>
+
+    <div class="specification-container">
+      <h3 class="categorie">Loja:</h3>
+      <p class="text">Tião Calçados;</p>
+    </div>
+
+    <div class="specification-container">
+      <h3 class="categorie">Código:</h3>
+      <p class="text">467362c7</p>
+    </div>
+
+    <div class="specification-container">
+      <h3 class="categorie">Categoria:</h3>
+      <p class="text">Masculino; Feminino; Street; Nike;</p>
+    </div>
+
+    <div class="buttons-container">
+      <button class="buy-btn shadow">Ver mais</button>
+      <div class="save-btn shadow" id="heart" onclick="favorite()">
+        <i class="ph-heart"></i>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer> </app-footer>
