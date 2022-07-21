@@ -1,0 +1,22 @@
+{
+  "sapatos": [
+    {
+      "id": 1,
+      "imagem": "https://openshoes.netlify.app/src/assets/img/orange-shoes.svg",
+      "descricao": "sapato bonito",
+      "preco": 40.99
+    },
+    {
+      "id": 2,
+      "imagem": "https://openshoes.netlify.app/src/assets/img/orange-shoes.svg",
+      "descricao": "sapato feio",
+      "preco": 40.99
+    },
+    {
+      "id": 3,
+      "imagem": "https://openshoes.netlify.app/src/assets/img/orange-shoes.svg",
+      "descricao": "sapato sapato",
+      "preco": 40.99
+    }
+  ]
+}

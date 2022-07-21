@@ -1,0 +1,92 @@
+.example-card {
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color:white;
+    border-radius: 0.5rem;
+ margin: 10px; 
+ /* width: 100%; */
+/* margin-left: 100px; */
+   
+   
+
+   
+  }
+  .colorbg{
+    background-color:var(--background)
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+}
+
+  .teste{
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    min-height: 1px;
+    display: flex;
+
+  }
+  .card{
+    
+      position: relative;
+      margin: 0.5rem 0 0 0.5rem;
+    
+  }
+.cdimg{
+  display: block;
+
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+
+}
+span{
+  float: right;
+}
+
+p{
+  color: var(--primary);
+    font-size: 24px;
+    font-weight: 300;
+ 
+}
+p:hover {
+  color: var(--secundary);
+}
+
+.tteste{
+height: 190px;
+
+}
+.tttteste{
+  height: 100px;
+  }
+  .das{
+    margin-top: 10px;
+    align-items: center;
+  }
+  .mmm{
+    margin: 0;
+  }
+
+
+.b{
+    text-align: center;
+  
+}
+h3{
+  font-size: 2.92rem;
+  color: var(--primary);
+  margin-top: 30px;
+}
+
+
+
+ 

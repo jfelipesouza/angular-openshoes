@@ -4,9 +4,10 @@ import { HomeComponent } from './screens/home/home.component';
 
 const routes: Routes = [
   {
-    path: './home',
+    path: 'home',
     component: HomeComponent,
-  },
+  }
+  
 ];
 
 @NgModule({

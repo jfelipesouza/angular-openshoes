@@ -13,6 +13,7 @@
   --text:#222;
   --text-light:#fff;
   --shadow:#0000009a;
+  --background: #f6f0f0;
 
   /*Font-size Desktop*/
   --title:2.5rem;
@@ -67,3 +68,10 @@
   }
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+body{
+  background-color: var(--background);
+}
