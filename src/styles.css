@@ -1,49 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-
-:root{
+:root {
   /*Pallete*/
-  --primary:#1D3557;
-  --primary-light:#A8DADC;
-  --secundary:#457B9D;
-  --card:#F1FAEE;
-  --error:#E63946;
-  --text:#222;
-  --text-light:#fff;
-  --shadow:#0000009a;
+  --primary: #1d3557;
+  --primary-light: #a8dadc;
+  --secundary: #457b9d;
+  --card: #f1faee;
+  --error: #e63946;
+  --text: #222;
+  --text-light: #fff;
+  --shadow: #0000009a;
 
   /*Font-size Desktop*/
-  --title:2.5rem;
-  --subTitle:1.8rem;
-  --description:1.3rem;
-  --generic-text:1rem;
+  --title: 2.5rem;
+  --subTitle: 1.8rem;
+  --description: 1.3rem;
+  --generic-text: 1rem;
 
   /*Font-size Mobile*/
-  --mobile-title:2rem;
-  --mobile-subTitle:1.5rem;
-  --mobile-description:1rem;
+  --mobile-title: 2rem;
+  --mobile-subTitle: 1.5rem;
+  --mobile-description: 1rem;
 
   /*Space*/
-  --space-xxxlg:3rem;
-  --space-xxlg:2.5rem;
-  --space-xlg:2rem;
-  --space-lg:1.5rem;
-  --space-md:1rem;
-  --space-sm:0.5rem;
-
+  --space-xxxlg: 3rem;
+  --space-xxlg: 2.5rem;
+  --space-xlg: 2rem;
+  --space-lg: 1.5rem;
+  --space-md: 1rem;
+  --space-sm: 0.5rem;
 
   /*Default Config*/
   font-size: 16px;
-
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
@@ -51,7 +48,8 @@
   line-height: normal;
 }
 
-button,a{
+button,
+a {
   cursor: pointer;
 }
 
@@ -73,7 +71,7 @@ body {
 
 /* width scrollbar */
 body::-webkit-scrollbar {
-  width: 0.2rem;
+  width: 0.3rem;
 }
 
 /* Track scrollbar */
@@ -86,21 +84,3 @@ body::-webkit-scrollbar-thumb {
   background: var(--primary-light);
   border-radius: 2rem;
 }
-
-
-
-
-/*Animation*/
-
-@keyframes float {
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(2rem);
-  }
-  100%{
-    transform: translateY(0);
-  }
-}
-

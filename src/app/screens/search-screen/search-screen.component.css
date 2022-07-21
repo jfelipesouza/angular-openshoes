@@ -1,4 +1,4 @@
-main{
-  height: 150vh;
-  background-color: blue;
+main {
+  min-height: 100vh;
+  background-color: blueviolet;
 }

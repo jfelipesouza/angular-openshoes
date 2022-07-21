@@ -34,7 +34,7 @@ export class ActionAnchorComponent implements OnInit {
         color = this.bgColor;
         break;
     }
-
+    document.getElementById(this.id)!.style.borderRadius = 'var(--space-sm)';
     document.getElementById(this.id)!.style.backgroundColor = color;
   }
 }

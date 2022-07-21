@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-screen.component.css'],
 })
 export class SearchScreenComponent implements OnInit {
+  navButtons: { name: string; link: string; normal: boolean }[] = [
+    { name: 'SingIn', link: '/singIn', normal: false },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {
