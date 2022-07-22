@@ -294,6 +294,8 @@ main {
 
   .title {
     font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: var(--space-md);
   }
 
   .subTitle {
