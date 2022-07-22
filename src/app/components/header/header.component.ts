@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { INavbarButton } from 'src/app/@types/header';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() position?: string;
   @Input() showMobileMenu?: boolean;
-  @Input() navButtons!: { name: string; link: string; normal: boolean }[];
+  @Input() navButtons!: INavbarButton[];
 
   ngOnInit(): void {
     if (this.position) {
@@ -24,9 +25,15 @@ export class HeaderComponent implements OnInit {
   handleOpenMenu(): void {
     this.openMenu = !this.openMenu;
     if (this.openMenu === true) {
-      document.getElementById('menu')!.style.transform = 'translateY(0)';
+      document.getElementById('menu')!.style.display = 'flex';
+      setTimeout(() => {
+        document.getElementById('menu')!.style.transform = 'translateY(0)';
+      }, 10);
     } else {
       document.getElementById('menu')!.style.transform = 'translateY(-100%)';
+      setTimeout(() => {
+        document.getElementById('menu')!.style.display = 'none';
+      }, 1000);
     }
   }
 }
