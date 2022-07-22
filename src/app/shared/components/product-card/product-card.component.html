@@ -1,0 +1,14 @@
+<a routerLink="{{ productRouter }}">
+  <div class="card">
+    <img
+      *ngIf="src"
+      src="{{ src }}"
+      alt="mojtaba-fahiminia"
+      class="product-image"
+    />
+    <div class="card-content">
+      <h3 class="card-title">{{ productName | titlecase }}</h3>
+      <p class="card-price">{{ productPrice | currency: "R$ " }}</p>
+    </div>
+  </div>
+</a>
