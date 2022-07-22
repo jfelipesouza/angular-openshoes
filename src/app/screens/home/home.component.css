@@ -15,7 +15,7 @@
 main {
   display: flex;
   min-height: 100vh;
-  padding-top: 5rem;
+  padding-top: 4rem;
   flex-direction: column;
 }
 
@@ -24,7 +24,6 @@ main {
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  padding: 2rem 0;
 }
 .section#about,
 .section#contact {
@@ -53,7 +52,7 @@ main {
 .title {
   font-size: 2.5rem;
   text-align: center;
-  margin: 1rem 0;
+  margin: var(--space-lg) 0;
   font-weight: 700;
   color: var(--primary);
 }
@@ -74,14 +73,15 @@ main {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
   color: var(--text-light);
 }
 
 .description {
   font-size: 1rem;
   text-align: justify;
-  margin: 1rem 0;
+  margin: var(--space-md) 0;
+  margin-bottom: var(--space-xxlg);
   color: var(--text);
 }
 
@@ -240,6 +240,9 @@ main {
 @media screen and (max-width: 1013px) {
   .section {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
   .left-container,
@@ -299,7 +302,7 @@ main {
 
   .title,
   .subTitle,
-  .descrition {
+  .description {
     width: 95%;
   }
 
