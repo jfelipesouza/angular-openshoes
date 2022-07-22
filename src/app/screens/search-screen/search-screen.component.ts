@@ -21,7 +21,5 @@ export class SearchScreenComponent implements OnInit {
     }
   }
 
-  click(): void {
-    alert('Banana');
-  }
+  click(): void {}
 }

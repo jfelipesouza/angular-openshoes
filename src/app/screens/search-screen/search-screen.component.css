@@ -69,6 +69,11 @@ main {
   color: var(--primary);
 }
 
+.search-button:active {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
 .cards-container {
   width: 100%;
   padding: 0 2rem;

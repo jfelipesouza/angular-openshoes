@@ -13,6 +13,7 @@ import { DashboardHomeComponent } from './screens/user/dashboard-home/dashboard-
 import { DashboardProductsComponent } from './screens/user/dashboard-products/dashboard-products.component';
 import { DashboardRegisterComponent } from './screens/user/dashboard-register/dashboard-register.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SingInComponent } from './screens/sing-in/sing-in.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     DashboardProductsComponent,
     DashboardRegisterComponent,
     SidebarComponent,
+    SingInComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],
