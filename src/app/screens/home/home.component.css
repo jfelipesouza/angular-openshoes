@@ -288,7 +288,7 @@ main {
   }
 
   .section#about .left-container,
-  .right-container {
+  .section#about .right-container {
     margin: 2rem 0;
   }
   .left-container p,
