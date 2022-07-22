@@ -19,12 +19,11 @@
       </p>
 
       <app-action-anchor
-        [link]="actionButtonLink"
-        [bgColor]="actionButtonBgColorNormal"
-        value="BUSQUE JÁ"
-        id="action-anchor-1"
-      >
-      </app-action-anchor>
+        value="Comece agora"
+        bgColor="secundary"
+        link="./search"
+        id="anchor-1"
+      ></app-action-anchor>
     </div>
     <div class="right-container" id="shoes">
       <img
@@ -52,14 +51,12 @@
         nossa equipe de suporte 24h, assine nossa gratuitamente nosso serviço de
         anúncios e receba no seu smartphone ou e-mail ofertas imperdíveis
       </p>
-
       <app-action-anchor
-        [link]="actionButtonLink"
-        value="Comece agora"
-        [bgColor]="actionButtonBgColorLight"
-        id="action-anchor-2"
-      >
-      </app-action-anchor>
+        value="Veja mais"
+        bgColor="primary-light"
+        link="./search"
+        id="anchor-2"
+      ></app-action-anchor>
     </div>
   </section>
 
@@ -110,13 +107,13 @@
       </a>
     </div>
     <br />
+
     <app-action-anchor
-      [link]="actionButtonLink"
       value="Veja mais"
-      [bgColor]="actionButtonBgColorNormal"
-      id="action-anchor-3"
-    >
-    </app-action-anchor>
+      bgColor="secundary"
+      link="./search"
+      id="anchor-3"
+    ></app-action-anchor>
   </section>
 
   <section class="section" id="contact" style="padding-top: 3rem">
@@ -153,14 +150,6 @@
             placeholder="Adoraria uma pantufa de dinossauro..."
           ></textarea>
         </div>
-
-        <app-action-anchor
-          link=""
-          value="Enviar"
-          bgColor="primary"
-          id="action-anchor-4"
-        >
-        </app-action-anchor>
       </form>
     </div>
 

@@ -9,10 +9,10 @@ export class SearchScreenComponent implements OnInit {
   navButtons: { name: string; link: string; normal: boolean }[] = [
     { name: 'SingIn', link: '/singIn', normal: false },
   ];
-
+  position: string = 'fixed';
   constructor() {}
 
   ngOnInit(): void {
-    console.log('Pesquisa meu bem');
+    console.log();
   }
 }
