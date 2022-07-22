@@ -1,4 +1,119 @@
 main {
   min-height: 100vh;
-  background-color: blueviolet;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--space-xxxlg) 0;
+}
+
+.title {
+  font-size: var(--title);
+  color: var(--primary);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.textfield {
+  position: relative;
+  min-width: 290px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--space-sm);
+  box-shadow: 1px 2px 3px #00000080;
+}
+
+.textfield input {
+  padding: var(--space-sm);
+  background-color: var(--secundary);
+  border: 2px solid transparent;
+  border-radius: var(--space-sm);
+  color: var(--text-light);
+  font-size: var(--generic-text);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  padding-right: 4rem;
+}
+.textfield input::placeholder {
+  color: #f0eded;
+}
+.textfield input:focus {
+  background-color: transparent;
+  border-color: var(--secundary);
+  color: var(--primary);
+}
+.textfield input:focus::placeholder {
+  color: #333;
+}
+
+.search-button {
+  width: 4rem;
+  background-color: var(--primary);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: var(--description);
+  color: var(--text-light);
+  border: none;
+  border-radius: 0 var(--space-sm) var(--space-sm) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.cards-container {
+  width: 100%;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-content: center;
+  justify-content: center;
+
+  margin: var(--space-xxlg) 0;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1400px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: var(--mobile-title);
+  }
+  .textfield {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
 }

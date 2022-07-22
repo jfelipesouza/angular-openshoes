@@ -1,5 +1,29 @@
 <app-header [navButtons]="navButtons"></app-header>
 
-<main></main>
+<main>
+  <h2 class="title">Encontre o modelo ideal para você</h2>
+  <div class="textfield">
+    <input
+      type="text"
+      name="search"
+      id="search"
+      placeholder="Procure por nome, ou se preferir, por categoria"
+    />
+    <button class="search-button" (click)="click()">
+      <i class="ph-magnifying-glass"></i>
+    </button>
+  </div>
+
+  <div class="cards-container">
+    <app-product-card
+      *ngFor="let card of cards"
+      src="../../../assets/img/orange-shoes-1.svg"
+      productName="Sapato laranja"
+      productPrice="45"
+      productId="card-1"
+    >
+    </app-product-card>
+  </div>
+</main>
 
 <app-footer></app-footer>

@@ -10,6 +10,8 @@ export class SearchScreenComponent implements OnInit {
   navButtons: INavbarButton[] = [
     { name: 'SingIn', link: '/singIn', normal: false },
   ];
+
+  cards: any[] = [{}, {}, {}, {}, {}, {}, {}, {}];
   constructor() {}
 
   ngOnInit(): void {
@@ -17,5 +19,9 @@ export class SearchScreenComponent implements OnInit {
     if (y != 0) {
       window.scroll(0, 0);
     }
+  }
+
+  click(): void {
+    alert('Banana');
   }
 }
