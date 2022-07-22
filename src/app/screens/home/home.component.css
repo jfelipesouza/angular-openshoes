@@ -287,6 +287,10 @@ main {
     display: none;
   }
 
+  .section#about .left-container,
+  .right-container {
+    margin: 2rem 0;
+  }
   .left-container p,
   .right-container p {
     width: 90%;
